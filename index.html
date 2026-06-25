@@ -1,3 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Professional links for Lawabien Osee Joyce TOE."
+    />
+    <title>Lawabien Osee Joyce TOE</title>
+    <style>
+      :root {
+        --ink: #14201e;
+        --muted: #5f6e69;
+        --line: #dce6e2;
+        --paper: #f4f8f7;
+        --card: #ffffff;
+        --teal: #0c7a70;
+        --teal-dark: #07544e;
+        --gold: #c98b2c;
+        --blue: #0a66c2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          Arial, Helvetica, ui-sans-serif, system-ui, -apple-system, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 20% 15%, rgba(12, 122, 112, 0.22), transparent 30%),
+          radial-gradient(circle at 86% 78%, rgba(201, 139, 44, 0.22), transparent 28%),
+          linear-gradient(135deg, #f8fbfa, var(--paper));
+        background-size: 140% 140%;
+        animation: soft-shift 12s ease-in-out infinite alternate;
+      }
+
+      main {
+        min-height: 100vh;
+        padding: 32px 18px;
+        display: grid;
+        place-items: center;
+      }
+
+      .card {
+        width: min(100%, 430px);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 28px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 22px 70px rgba(20, 32, 30, 0.14);
+        text-align: center;
+        backdrop-filter: blur(14px);
+        animation: rise-in 520ms ease-out both;
+      }
+
+      .photo {
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 22%;
+        border: 4px solid #ffffff;
+        box-shadow:
+          0 0 0 2px rgba(12, 122, 112, 0.22),
+          0 14px 28px rgba(20, 32, 30, 0.18);
+        background: #eeeeee;
+      }
+
+      h1 {
+        margin: 18px 0 6px;
+        font-size: 1.7rem;
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        margin: 0 0 22px;
+        color: var(--muted);
+        font-size: 0.98rem;
+        line-height: 1.45;
+      }
+
+      .links {
+        display: grid;
+        gap: 10px;
+      }
+
+      .links a {
+        min-height: 54px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0 14px;
+        display: grid;
+        grid-template-columns: 38px 1fr 18px;
+        gap: 12px;
+        align-items: center;
+        color: var(--ink);
+        background: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: left;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .links a:hover,
+      .links a:focus-visible {
+        transform: translateY(-2px);
+        border-color: var(--brand);
+        box-shadow: 0 12px 24px rgba(20, 32, 30, 0.12);
+        outline: none;
+      }
+
+      .links a::after {
+        content: "›";
+        color: var(--brand);
+        font-size: 1.35rem;
+        line-height: 1;
+        justify-self: end;
+      }
+
+      .logo {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        display: grid;
+        place-items: center;
+        color: #ffffff;
+        background: var(--brand);
+      }
+
+      .logo svg {
+        width: 21px;
+        height: 21px;
+        display: block;
+        fill: currentColor;
+      }
+
+      .linkedin {
+        --brand: var(--blue);
+      }
+
+      .x {
         --brand: #111111;
       }
 
